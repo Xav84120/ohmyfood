@@ -4,6 +4,7 @@
   list-style-type: none;
   text-decoration: none;
   box-sizing: border-box;
+  font-family: roboto, sans-serif;
 }
 
 .couleur {
@@ -47,7 +48,7 @@
   justify-content: center;
   align-items: center;
   height: 50px;
-  background-color: rgba(234, 234, 234, 0.8);
+  background-color: rgba(176, 188, 200, 0.3);
   border-top: 2px #CECECE solid;
 }
 .localisation__txt {
@@ -55,6 +56,30 @@
   justify-content: space-between;
   align-items: center;
   width: 45%;
-  font-family: roboto, sans-serif;
   font-weight: bold;
+}
+
+.presentation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+  background-color: #F7F7F7;
+  margin-bottom: 30px;
+}
+.presentation__contain {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 90%;
+  height: 200px;
+  margin: auto;
+}
+.presentation__contain--reservez {
+  text-align: center;
+  font-weight: bold;
+}
+.presentation__contain--decouvrez {
+  text-align: center;
 }/*# sourceMappingURL=mobile.css.map */

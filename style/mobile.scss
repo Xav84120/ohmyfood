@@ -4,11 +4,13 @@
     list-style-type: none;
     text-decoration: none;
     box-sizing: border-box;
+    font-family: roboto, sans-serif;
 }
 
 $clr-prim: #9356DC;
 $clr-second: #FF79DA;
 $clr-tert: #99E2D0;
+$clr-grey: #EAEAEA;
 
 @mixin center {
     display: flex;
@@ -19,6 +21,13 @@ $clr-tert: #99E2D0;
 @mixin between {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+@mixin vertical-around {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
 }
 
@@ -65,13 +74,33 @@ $clr-tert: #99E2D0;
 .localisation {
     @include center;
     height: 50px;
-    background-color: rgba($color: #eaeaea, $alpha: .8);
+    background-color: rgba(176, 188, 200, .3);
     border-top: 2px #CECECE solid;
     &__txt {
         @include between;
         width: 45%;
-        font-family: roboto, sans-serif;
+       
         font-weight: bold;
+    }
+}
+
+.presentation {
+    @include center;
+    height: 250px;
+    background-color: #F7F7F7;
+    margin-bottom: 30px;
+    &__contain {
+        @include vertical-around;
+        width: 90%;
+        height: 200px;
+        margin: auto;
+        &--reservez {
+        text-align: center;
+        font-weight: bold;
+        }
+        &--decouvrez {
+        text-align: center;
+        }
     }
 }
 
