@@ -101,6 +101,15 @@ $clr-grey: #EAEAEA;
         &--decouvrez {
         text-align: center;
         }
+        &--btn {
+            width: 180px;
+            height: 45px;
+            border-radius: 30px;
+            color:aliceblue;
+            font-weight: bold;
+            background: linear-gradient(to bottom, #FF79DA 0%, #9356DC 77%, #9356DC 100%);
+            box-shadow: #c0baba 2px 3px 2px 0px;
+        }
     }
 }
 
