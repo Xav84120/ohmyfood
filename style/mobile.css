@@ -65,7 +65,6 @@
   align-items: center;
   height: 250px;
   background-color: #F7F7F7;
-  margin-bottom: 30px;
 }
 .presentation__contain {
   display: flex;
@@ -91,4 +90,13 @@
   font-weight: bold;
   background: linear-gradient(to bottom, #FF79DA 0%, #9356DC 77%, #9356DC 100%);
   box-shadow: #c0baba 2px 3px 2px 0px;
+}
+
+.fonctionnement {
+  border: 1px black solid;
+  height: 450px;
+}
+.fonctionnement__contain {
+  width: 90%;
+  margin: auto;
 }/*# sourceMappingURL=mobile.css.map */
