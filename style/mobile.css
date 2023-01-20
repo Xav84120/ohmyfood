@@ -30,6 +30,10 @@
   background-color: #99E2D0;
 }
 
+h4 {
+  font-weight: lighter;
+}
+
 /*********************************************************** HEADER ***********************************************************/
 .header {
   display: flex;
@@ -59,6 +63,7 @@
   font-weight: bold;
 }
 
+/*************************************************** SECTION PRESENTATION *****************************************************/
 .presentation {
   display: flex;
   justify-content: center;
@@ -93,6 +98,7 @@
   box-shadow: #c0baba 2px 3px 2px 0px;
 }
 
+/************************************************ SECTION FONCTIONNEMENT ********************************************************/
 .fonctionnement {
   height: 350px;
 }
@@ -142,4 +148,35 @@
 }
 .fct-btn__txt i {
   color: #877f7f;
+}
+
+/*********************************************************** SECTION RESTAURANTS *******************************************************/
+.restaurants {
+  background-color: #EAEAEA;
+  height: 600px;
+}
+.restaurants__contain {
+  width: 90%;
+  margin: auto;
+}
+
+.restaurants-cards {
+  background-color: white;
+  width: 100%;
+  height: 190px;
+  margin-bottom: 40px;
+  border-radius: 10px;
+  box-shadow: #c0baba 2px 3px 2px 0px;
+}
+.restaurants-cards__img {
+  width: 100%;
+  height: 130px;
+  border-radius: 10px 10px 0 0;
+  background: url(../images/palette.jpg) center/cover;
+}
+.restaurants-cards__description {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
 }/*# sourceMappingURL=mobile.css.map */
