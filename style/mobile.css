@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -153,7 +154,7 @@ h4 {
 /*********************************************************** SECTION RESTAURANTS *******************************************************/
 .restaurants {
   background-color: #EAEAEA;
-  height: 600px;
+  height: 1000px;
 }
 .restaurants__contain {
   width: 90%;
@@ -172,11 +173,26 @@ h4 {
   width: 100%;
   height: 130px;
   border-radius: 10px 10px 0 0;
-  background: url(../images/palette.jpg) center/cover;
 }
 .restaurants-cards__description {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px;
+}
+
+.palette {
+  background: url(../images/palette.jpg) center/cover;
+}
+
+.note {
+  background: url(../images/note.jpg) center/cover;
+}
+
+.française {
+  background: url(../images/française.jpg) center/cover;
+}
+
+.delice {
+  background: url(../images/delice.jpg) center/cover;
 }/*# sourceMappingURL=mobile.css.map */
