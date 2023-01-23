@@ -169,11 +169,15 @@ h4 {
 /*********************************************************** SECTION RESTAURANTS *******************************************************/
 
 .restaurants {
+    @include center;
     background-color: $clr-grey;
     height: 1000px;
     &__contain {
         width: 90%;
         margin: auto;
+        &--title {
+            margin-bottom: 20px;
+        }
     }
 }
 
@@ -211,8 +215,48 @@ h4 {
 }
 
 
+/*********************************************************** FOOTER *************************************************************/
 
- 
+.footer {
+    background-color: #353535;
+    height: 200px;
+    margin-bottom: 30px;
+    padding: 10px;
+    &__nav {
+        width: 75%;
+        &--i {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+    }
+}
 
-
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    // width: 90%;
+    height: 90%;
+    margin: auto;
+    color: white;
+    p {
+        font-family: Shrikhand, cursive;
+    }
+    ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        height: 100px;
+    }
+    li {
+        width: 100%;
+        font-weight: bold;
+        font-size: 1rem;
+    }
+    
+    
+}
 
