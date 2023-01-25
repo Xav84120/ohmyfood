@@ -228,6 +228,12 @@ h4 {
             display: flex;
             justify-content: space-between;
             align-items: flex-start;
+            i {
+                width: 2rem;
+                height: 2rem;
+                color: white;
+        
+            }
         }
     }
 }

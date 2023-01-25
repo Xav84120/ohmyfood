@@ -218,6 +218,11 @@ h4 {
   justify-content: space-between;
   align-items: flex-start;
 }
+.footer__nav--i i {
+  width: 1rem;
+  height: 1rem;
+  color: white;
+}
 
 .footer-container {
   display: flex;
