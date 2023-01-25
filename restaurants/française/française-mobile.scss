@@ -78,7 +78,9 @@ h6 {
 /*************************************************** SECTION MENU *********************************************************/
 
 .menu {
-    background-color: #F7F7F7;
+    background-color: #EDECEC;
+    padding-bottom: 50px;
+    padding-top: 10px;
 }
 .menu-title {
     @include row-space-between;
@@ -90,7 +92,7 @@ h6 {
 }
 
 
-/************** ARTICLE ENTREES ****************/
+/************** ARTICLE ****************/
 
 .menu-content {
     width: 90%;
@@ -106,6 +108,7 @@ h6 {
         }
     }
     &__proposition {
+        background-color: white;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
@@ -121,3 +124,72 @@ h6 {
         }
     }
 }
+.commander {
+    @include row-center;
+    &__contain {
+        
+        &--btn {
+            width: 180px;
+            height: 45px;
+            margin-top: 20px;
+            border-radius: 30px;
+            color:aliceblue;
+            font-weight: bold;
+            border: none;
+            background: linear-gradient(to bottom, #FF79DA 0%, #9356DC 77%, #9356DC 100%);
+            box-shadow: #c0baba 2px 3px 2px 0px;
+        }
+    }
+}
+
+/************************************************************************ FOOTER******************************************************************/
+
+.footer {
+    background-color: #353535;
+    height: 200px;
+    padding: 10px;
+    &__nav {
+        width: 75%;
+        &--i {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            i {
+                width: 2rem;
+                height: 2rem;
+                color: white;
+        
+            }
+        }
+    }
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    // width: 90%;
+    height: 90%;
+    margin: auto;
+    color: white;
+    p {
+        font-family: Shrikhand, cursive;
+    }
+    ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        height: 100px;
+    }
+    li {
+        width: 100%;
+        font-weight: bold;
+        font-size: 1rem;
+    }
+    
+    
+}
+
+

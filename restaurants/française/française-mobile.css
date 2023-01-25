@@ -55,7 +55,9 @@ h6 {
 
 /*************************************************** SECTION MENU *********************************************************/
 .menu {
-  background-color: #F7F7F7;
+  background-color: #EDECEC;
+  padding-bottom: 50px;
+  padding-top: 10px;
 }
 
 .menu-title {
@@ -68,7 +70,7 @@ h6 {
   margin-bottom: 20px;
 }
 
-/************** ARTICLE ENTREES ****************/
+/************** ARTICLE ****************/
 .menu-content {
   width: 90%;
   margin: auto;
@@ -81,6 +83,7 @@ h6 {
   margin-bottom: 10px;
 }
 .menu-content__proposition {
+  background-color: white;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -96,4 +99,66 @@ h6 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.commander {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.commander__contain--btn {
+  width: 180px;
+  height: 45px;
+  margin-top: 20px;
+  border-radius: 30px;
+  color: aliceblue;
+  font-weight: bold;
+  border: none;
+  background: linear-gradient(to bottom, #FF79DA 0%, #9356DC 77%, #9356DC 100%);
+  box-shadow: #c0baba 2px 3px 2px 0px;
+}
+
+/************************************************************************ FOOTER******************************************************************/
+.footer {
+  background-color: #353535;
+  height: 200px;
+  padding: 10px;
+}
+.footer__nav {
+  width: 75%;
+}
+.footer__nav--i {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.footer__nav--i i {
+  width: 2rem;
+  height: 2rem;
+  color: white;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  height: 90%;
+  margin: auto;
+  color: white;
+}
+.footer-container p {
+  font-family: Shrikhand, cursive;
+}
+.footer-container ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  height: 100px;
+}
+.footer-container li {
+  width: 100%;
+  font-weight: bold;
+  font-size: 1rem;
 }/*# sourceMappingURL=française-mobile.css.map */
