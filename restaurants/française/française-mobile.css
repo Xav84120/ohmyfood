@@ -69,18 +69,18 @@ h6 {
 }
 
 /************** ARTICLE ENTREES ****************/
-.entrees-content {
+.menu-content {
   width: 90%;
   margin: auto;
   margin-bottom: 20px;
 }
-.entrees-content__title--underline {
+.menu-content__title--underline {
   width: 50px;
   height: 3px;
   background-color: #99E2D0;
   margin-bottom: 10px;
 }
-.entrees-content__proposition {
+.menu-content__proposition {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -91,7 +91,7 @@ h6 {
   height: 65px;
   margin-bottom: 10px;
 }
-.entrees-content__proposition--description {
+.menu-content__proposition--description {
   width: 90%;
   display: flex;
   justify-content: space-between;
