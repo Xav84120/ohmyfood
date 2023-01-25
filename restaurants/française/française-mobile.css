@@ -47,7 +47,18 @@ h6 {
 }
 
 /******************************************************* MAIN **************************************************************/
+main {
+  position: relative;
+}
+
 /********************************************* SECTION IMAGE-PRESENTATION *************************************************/
+.image-presentation {
+  position: absolute;
+  bottom: 160px;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
 .image-presentation__contain {
   height: 200px;
   background: url(./fr.jpg) center/cover;
@@ -56,8 +67,10 @@ h6 {
 /*************************************************** SECTION MENU *********************************************************/
 .menu {
   background-color: #EDECEC;
+  border-radius: 30px 30px 0 0;
   padding-bottom: 50px;
   padding-top: 10px;
+  margin-top: 160px;
 }
 
 .menu-title {
