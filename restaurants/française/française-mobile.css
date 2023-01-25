@@ -24,4 +24,9 @@
   font-size: 1.5rem;
 }
 
-/******************************************************* MAIN **************************************************************//*# sourceMappingURL=française-mobile.css.map */
+/******************************************************* MAIN **************************************************************/
+/********************************************* SECTION IMAGE-PRESENTATION *************************************************/
+.image-presentation__contain {
+  height: 200px;
+  background: url(./fr.jpg) center/cover;
+}/*# sourceMappingURL=française-mobile.css.map */
