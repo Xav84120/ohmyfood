@@ -4,12 +4,46 @@
     box-sizing: border-box;
     list-style-type: none;
     text-decoration: none;
+    }
+
+body {
+    font-family: "roboto", "sans-serif";
 }
+
+$clr-prim: #9356DC;
+$clr-second: #FF79DA;
+$clr-tert: #99E2D0;
+$clr-grey: #EAEAEA;
 
 @mixin row-center {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@mixin row-space-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h3 {
+    text-transform: uppercase;
+    font-weight: lighter;
+}
+
+h4 {
+    font-size: 1.1rem;
+    
+}
+
+h5 {
+    font-weight: 100;
+    font-size: .8rem;
+}
+
+h6 {
+    font-size: .8rem;
 }
 
  /****************************************************** HEADER **********************************************************/   
@@ -39,5 +73,51 @@
 .image-presentation__contain {
     height: 200px;
     background: url(./fr.jpg) center/cover;
-}   
+}  
 
+/*************************************************** SECTION MENU *********************************************************/
+
+.menu {
+    background-color: #F7F7F7;
+}
+.menu-title {
+    @include row-space-between;
+    font-family: "shrikhand", "serif";
+    width: 90%;
+    margin: auto;
+    margin-bottom: 20px;
+
+}
+
+
+/************** ARTICLE ENTREES ****************/
+
+.entrees-content {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 20px;
+    &__title {
+        &--underline {
+            width: 50px;
+            height: 3px;
+            background-color: $clr-tert;
+            margin-bottom: 10px;
+
+        }
+    }
+    &__proposition {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        padding-left: 10px;
+        border-radius: 15px;
+        box-shadow: #c0baba 2px 3px 2px 0px;
+        height: 65px;
+        margin-bottom: 10px; 
+        &--description {
+            width: 90%;
+            @include row-space-between;
+        }
+    }
+}
