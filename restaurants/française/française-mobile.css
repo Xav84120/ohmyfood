@@ -91,6 +91,47 @@ main {
 }
 
 /************** ARTICLE ****************/
+@-webkit-keyframes deroulement {
+  0% {
+    transform: scaleY(0);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+@keyframes deroulement {
+  0% {
+    transform: scaleY(0);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+.deroulement {
+  transform-origin: 50% 0%;
+  -webkit-animation-name: deroulement;
+          animation-name: deroulement;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+.entree {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.plats {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+.desserts {
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+
 .menu-content {
   width: 90%;
   margin: auto;

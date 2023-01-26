@@ -113,6 +113,33 @@ main {
 
 
 /************** ARTICLE ****************/
+@keyframes deroulement {
+    0% {
+        transform: scaleY(0);
+    }
+    100% {
+        transform: scaleY(1);
+    }
+}
+
+.deroulement {
+    transform-origin: 50% 0%;
+    animation-name: deroulement;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+}
+
+.entree {
+    animation-delay: 1s;
+}
+
+.plats {
+    animation-delay: 2s;
+}
+
+.desserts {
+    animation-delay: 3s;
+}
 
 .menu-content {
     width: 90%;
