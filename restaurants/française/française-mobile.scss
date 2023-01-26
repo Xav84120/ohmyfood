@@ -108,7 +108,21 @@ main {
     width: 80%;
     margin: auto;
     margin-bottom: 20px;
-
+    &__coeur {
+        position: relative;
+        font-size: 1.5rem;
+        &--plein {
+            position: absolute;
+            color: $clr-prim;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            &:hover {
+                opacity: 1;
+                transition: 1.5s;
+            }
+        }
+    }
 }
 
 

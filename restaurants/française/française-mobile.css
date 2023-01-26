@@ -89,6 +89,21 @@ main {
   margin: auto;
   margin-bottom: 20px;
 }
+.menu-title__coeur {
+  position: relative;
+  font-size: 1.5rem;
+}
+.menu-title__coeur--plein {
+  position: absolute;
+  color: #9356DC;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+.menu-title__coeur--plein:hover {
+  opacity: 1;
+  transition: 1.5s;
+}
 
 /************** ARTICLE ****************/
 @-webkit-keyframes deroulement {
