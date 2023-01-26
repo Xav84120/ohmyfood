@@ -10,6 +10,10 @@ body {
   font-family: "roboto", "sans-serif";
 }
 
+h2 {
+  font-size: 1.3rem;
+}
+
 h3 {
   text-transform: uppercase;
   font-weight: lighter;
@@ -30,16 +34,19 @@ h6 {
 
 /****************************************************** HEADER **********************************************************/
 .header-contain {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 50px;
-  background-color: green;
 }
 .header-contain__arrow {
+  position: absolute;
+  top: 15px;
+  left: 20px;
   width: 20px;
   height: 20px;
-  color: white;
+  color: black;
 }
 .header-contain__title {
   font-family: "shrikhand", "serif";
@@ -78,7 +85,7 @@ main {
   justify-content: space-between;
   align-items: center;
   font-family: "shrikhand", "serif";
-  width: 90%;
+  width: 80%;
   margin: auto;
   margin-bottom: 20px;
 }
@@ -105,7 +112,7 @@ main {
   border-radius: 15px;
   box-shadow: #c0baba 2px 3px 2px 0px;
   height: 65px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 .menu-content__proposition--description {
   width: 90%;
@@ -135,19 +142,19 @@ main {
 .footer {
   background-color: #353535;
   height: 200px;
+  margin-bottom: 30px;
   padding: 10px;
 }
 .footer__nav {
-  width: 75%;
+  width: 80%;
 }
 .footer__nav--i {
-  display: flex;
   justify-content: space-between;
   align-items: flex-start;
 }
 .footer__nav--i i {
-  width: 2rem;
-  height: 2rem;
+  width: 1.5rem;
+  height: 1.5rem;
   color: white;
 }
 
@@ -172,6 +179,5 @@ main {
 }
 .footer-container li {
   width: 100%;
-  font-weight: bold;
   font-size: 1rem;
 }/*# sourceMappingURL=française-mobile.css.map */

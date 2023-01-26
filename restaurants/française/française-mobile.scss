@@ -27,6 +27,10 @@ $clr-grey: #EAEAEA;
     align-items: center;
 }
 
+h2 {
+    font-size: 1.3rem;
+}
+
 h3 {
     text-transform: uppercase;
     font-weight: lighter;
@@ -50,13 +54,16 @@ h6 {
 
 
 .header-contain {
+    position: relative;
     @include row-center;
     height: 50px;
-    background-color: green;
     &__arrow {
+        position: absolute;
+        top: 15px;
+        left: 20px;
         width: 20px;
         height: 20px;
-        color: white;
+        color: black;
     }
     &__title {
         font-family: "shrikhand", "serif";
@@ -98,7 +105,7 @@ main {
 .menu-title {
     @include row-space-between;
     font-family: "shrikhand", "serif";
-    width: 90%;
+    width: 80%;
     margin: auto;
     margin-bottom: 20px;
 
@@ -130,7 +137,7 @@ main {
         border-radius: 15px;
         box-shadow: #c0baba 2px 3px 2px 0px;
         height: 65px;
-        margin-bottom: 10px; 
+        margin-bottom: 15px; 
         &--description {
             width: 90%;
             @include row-space-between;
@@ -160,16 +167,17 @@ main {
 .footer {
     background-color: #353535;
     height: 200px;
+    margin-bottom: 30px;
     padding: 10px;
     &__nav {
-        width: 75%;
+        width: 80%;
         &--i {
-            display: flex;
+            // display: flex;
             justify-content: space-between;
             align-items: flex-start;
             i {
-                width: 2rem;
-                height: 2rem;
+                width: 1.5rem;
+                height: 1.5rem;
                 color: white;
         
             }
@@ -182,7 +190,6 @@ main {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: flex-start;
-    // width: 90%;
     height: 90%;
     margin: auto;
     color: white;
@@ -198,11 +205,9 @@ main {
     }
     li {
         width: 100%;
-        font-weight: bold;
         font-size: 1rem;
     }
     
     
 }
-
 

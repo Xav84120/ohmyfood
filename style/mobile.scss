@@ -223,14 +223,14 @@ h4 {
     margin-bottom: 30px;
     padding: 10px;
     &__nav {
-        width: 75%;
+        width: 80%;
         &--i {
-            display: flex;
+            // display: flex;
             justify-content: space-between;
             align-items: flex-start;
             i {
-                width: 2rem;
-                height: 2rem;
+                width: 1.5rem;
+                height: 1.5rem;
                 color: white;
         
             }
@@ -243,7 +243,6 @@ h4 {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: flex-start;
-    // width: 90%;
     height: 90%;
     margin: auto;
     color: white;
@@ -259,7 +258,6 @@ h4 {
     }
     li {
         width: 100%;
-        font-weight: bold;
         font-size: 1rem;
     }
     
