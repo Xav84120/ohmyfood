@@ -128,6 +128,7 @@ main {
         }
     }
     &__proposition {
+        position: relative;
         background-color: white;
         display: flex;
         flex-direction: column;
@@ -138,9 +139,50 @@ main {
         box-shadow: #c0baba 2px 3px 2px 0px;
         height: 65px;
         margin-bottom: 15px; 
+        &--name {
+            transform-origin: 0% 50%;
+        }
         &--description {
             width: 90%;
+            transform-origin: 0% 50%;
             @include row-space-between;
+        }
+        &--encoche {
+            @include row-center;
+            position: absolute;
+            top: 0;
+            left: 80%;
+            background-color: $clr-tert;
+            width: 20%;
+            height: 100%;
+            border-radius: 0 15px 15px 0;
+            transform-origin: 100% 50%;
+            transform: scaleX(0);
+
+        }
+        &:hover {
+            .menu-content__proposition--name {
+                transition: 1s ease-in-out;
+                transform: scaleX(.8);
+            }
+            .menu-content__proposition--description {
+                transition: 1s ease-in-out;
+                transform: scaleX(.8);
+            }
+            .menu-content__proposition--encoche {
+                transition: 1s ease-in-out;
+                transform: scaleX(1);
+                i {
+                    border: 1px yellow solid;
+                    background-color: white;
+                    padding: .3rem;
+                    border-radius: 1.2rem;
+                    font-size: 1.2rem;
+                    color: green;
+                    transition: 1s;
+                    transform: rotate(360deg);
+                }
+            }
         }
     }
 }
