@@ -103,6 +103,7 @@ main {
 .menu-title__coeur--plein:hover {
   opacity: 1;
   transition: 1.5s;
+  cursor: pointer;
 }
 
 /************** ARTICLE ****************/
@@ -222,8 +223,9 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
-.commander__contain--btn {
+.commander__contain--btn-normal {
   width: 180px;
   height: 45px;
   margin-top: 20px;
@@ -231,8 +233,27 @@ main {
   color: aliceblue;
   font-weight: bold;
   border: none;
-  background: linear-gradient(to bottom, #FF79DA 0%, #9356DC 77%, #9356DC 100%);
+  background: linear-gradient(to bottom, #FF79DA 0%, #9356DC 100%);
   box-shadow: #c0baba 2px 3px 2px 0px;
+}
+.commander__contain--btn-hover {
+  position: absolute;
+  opacity: 0;
+  width: 180px;
+  height: 45px;
+  margin-top: 20px;
+  border-radius: 30px;
+  color: aliceblue;
+  font-weight: bold;
+  border: none;
+  background: linear-gradient(to bottom, #F4BFF4 0%, #FF79DA 100%);
+  box-shadow: #c0baba 2px 3px 2px 0px;
+}
+.commander__contain--btn-hover:hover {
+  opacity: 1;
+  transition: 1s ease-in-out;
+  box-shadow: #959191 2px 3px 2px 0px;
+  cursor: pointer;
 }
 
 /************************************************************************ FOOTER******************************************************************/

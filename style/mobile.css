@@ -119,6 +119,7 @@ h4 {
   opacity: 1;
   transition: 1s ease-in-out;
   box-shadow: #959191 2px 3px 2px 0px;
+  cursor: pointer;
 }
 
 /************************************************ SECTION FONCTIONNEMENT ********************************************************/
@@ -207,6 +208,22 @@ h4 {
   justify-content: space-between;
   align-items: center;
   padding: 10px;
+}
+.restaurants-cards__description-coeur {
+  position: relative;
+  font-size: 1.2rem;
+}
+.restaurants-cards__description-coeur--plein {
+  position: absolute;
+  color: #9356DC;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+.restaurants-cards__description-coeur--plein:hover {
+  opacity: 1;
+  transition: 1.5s;
+  cursor: pointer;
 }
 
 .palette {

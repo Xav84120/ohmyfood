@@ -120,6 +120,7 @@ main {
             &:hover {
                 opacity: 1;
                 transition: 1.5s;
+                cursor: pointer;
             }
         }
     }
@@ -229,18 +230,40 @@ main {
 }
 .commander {
     @include row-center;
+    position: relative;
     &__contain {
-        
         &--btn {
-            width: 180px;
-            height: 45px;
-            margin-top: 20px;
-            border-radius: 30px;
-            color:aliceblue;
-            font-weight: bold;
-            border: none;
-            background: linear-gradient(to bottom, #FF79DA 0%, #9356DC 77%, #9356DC 100%);
-            box-shadow: #c0baba 2px 3px 2px 0px;
+            &-normal {
+                width: 180px;
+                height: 45px;
+                margin-top: 20px;
+                border-radius: 30px;
+                color:aliceblue;
+                font-weight: bold;
+                border: none;
+                background: linear-gradient(to bottom, #FF79DA 0%, #9356DC 100%);
+                box-shadow: #c0baba 2px 3px 2px 0px;
+            }
+            &-hover {
+                position: absolute;
+                opacity: 0;
+                width: 180px;
+                height: 45px;
+                margin-top: 20px;
+                border-radius: 30px;
+                color:aliceblue;
+                font-weight: bold;
+                border: none;
+                background: linear-gradient(to bottom, #F4BFF4 0%, #FF79DA 100%);
+                box-shadow: #c0baba 2px 3px 2px 0px;
+                &:hover {
+                    opacity: 1;
+                    transition: 1s ease-in-out;
+                    box-shadow: #959191 2px 3px 2px 0px;
+                    cursor: pointer;
+
+                }
+            }
         }
     }
 }

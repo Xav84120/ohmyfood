@@ -137,6 +137,7 @@ h4 {
                     opacity: 1;
                     transition: 1s ease-in-out;
                     box-shadow: #959191 2px 3px 2px 0px;
+                    cursor: pointer;
                 }
             }
         }
@@ -222,6 +223,22 @@ h4 {
     &__description {
         @include between;
         padding: 10px;
+        &-coeur {
+            position: relative;
+            font-size: 1.2rem;
+            &--plein {
+                position: absolute;
+                color: $clr-prim;
+                top: 0;
+                left: 0;
+                opacity: 0;
+                &:hover {
+                    opacity: 1;
+                    transition: 1.5s;
+                    cursor: pointer;
+                }
+            }
+        }
     }
 }
 
