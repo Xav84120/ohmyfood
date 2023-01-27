@@ -107,14 +107,38 @@ h4 {
         text-align: center;
         }
         &--btn {
+            position: relative;
+            &-normal {
             width: 180px;
             height: 45px;
             border-radius: 30px;
             color:aliceblue;
             font-weight: bold;
             border: none;
-            background: linear-gradient(to bottom, #FF79DA 0%, #9356DC 77%, #9356DC 100%);
+            background: linear-gradient(to bottom, #FF79DA 0%, #9356DC 100%);
             box-shadow: #c0baba 2px 3px 2px 0px;
+            }
+            &-hover {
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;    
+            width: 180px;
+            height: 45px;
+            border-radius: 30px;
+            color:aliceblue;
+            font-weight: bold;
+            border: none;
+            background: linear-gradient(to bottom, #F4BFF4 0%, #FF79DA 100%);
+            box-shadow: #c0baba 2px 3px 2px 0px;
+            }
+            &:hover {
+                .presentation__contain--btn-hover {
+                    opacity: 1;
+                    transition: 1s ease-in-out;
+                    box-shadow: #959191 2px 3px 2px 0px;
+                }
+            }
         }
     }
 }
