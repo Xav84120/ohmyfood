@@ -200,9 +200,11 @@ main {
         height: 65px;
         margin-bottom: 15px; 
         &--name {
+            
             transform-origin: 0% 50%;
         }
         &--description {
+            text-overflow: ellipsis;
             width: 90%;
             transform-origin: 0% 50%;
             @include row-space-between;

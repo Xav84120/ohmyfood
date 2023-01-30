@@ -189,6 +189,7 @@ main {
   transform-origin: 0% 50%;
 }
 .menu-content__proposition--description {
+  text-overflow: ellipsis;
   width: 90%;
   transform-origin: 0% 50%;
   display: flex;
