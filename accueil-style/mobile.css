@@ -12,6 +12,10 @@ h4 {
   font-weight: lighter;
 }
 
+a {
+  color: black;
+}
+
 /*********************************************************** HEADER ***********************************************************/
 .header {
   display: flex;
@@ -261,4 +265,7 @@ h4 {
 .footer-container li {
   width: 100%;
   font-size: 1rem;
+}
+.footer-container a {
+  color: white;
 }/*# sourceMappingURL=mobile.css.map */

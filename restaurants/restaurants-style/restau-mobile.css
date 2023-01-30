@@ -312,4 +312,7 @@ main {
 .footer-container li {
   width: 100%;
   font-size: 1rem;
+}
+.footer-container a {
+  color: white;
 }/*# sourceMappingURL=restau-mobile.css.map */
