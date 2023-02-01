@@ -39,7 +39,7 @@ a {
 }
 .localisation__txt {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   width: 45%;
   font-weight: bold;
@@ -116,6 +116,7 @@ a {
 }
 .fonctionnement__contain--btn {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   height: 130px;
@@ -161,7 +162,7 @@ a {
   justify-content: center;
   align-items: center;
   background-color: #EAEAEA;
-  height: 1000px;
+  height: 630px;
 }
 .restaurants__contain {
   width: 90%;
@@ -169,6 +170,16 @@ a {
 }
 .restaurants__contain--title {
   margin-bottom: 20px;
+}
+
+.restau1-restau2, .restau3-restau4 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.restau1-restau2 a, .restau3-restau4 a {
+  width: 45%;
 }
 
 .restaurants-cards {
@@ -231,7 +242,10 @@ a {
   padding: 10px;
 }
 .footer__nav {
-  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
 }
 .footer__nav--i {
   justify-content: space-between;
@@ -257,10 +271,11 @@ a {
 }
 .footer-container ul {
   display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: flex-start;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   height: 100px;
+  text-align: center;
 }
 .footer-container li {
   width: 100%;
