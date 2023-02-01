@@ -199,12 +199,14 @@ main {
         box-shadow: #c0baba 2px 3px 2px 0px;
         height: 65px;
         margin-bottom: 15px; 
+       
         &--name {
-            
             transform-origin: 0% 50%;
+            h4 {
+                width: 250px;
+            }
         }
         &--description {
-            text-overflow: ellipsis;
             width: 90%;
             transform-origin: 0% 50%;
             @include row-space-between;
@@ -220,9 +222,10 @@ main {
             border-radius: 0 15px 15px 0;
             transform-origin: 100% 50%;
             transform: scaleX(0);
-
         }
+       
         &:hover {
+           
             .menu-content__proposition--name {
                 transition: 1s ease-in-out;
                 transform: scaleX(.8);
@@ -235,7 +238,6 @@ main {
                 transition: 1s ease-in-out;
                 transform: scaleX(1);
                 i {
-                    border: 1px yellow solid;
                     background-color: white;
                     padding: .3rem;
                     border-radius: 1.2rem;
@@ -244,6 +246,7 @@ main {
                     transition: 1s;
                     transform: rotate(360deg);
                 }
+                
             }
         }
     }

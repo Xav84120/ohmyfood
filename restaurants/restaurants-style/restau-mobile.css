@@ -188,8 +188,10 @@ main {
 .menu-content__proposition--name {
   transform-origin: 0% 50%;
 }
+.menu-content__proposition--name h4 {
+  width: 250px;
+}
 .menu-content__proposition--description {
-  text-overflow: ellipsis;
   width: 90%;
   transform-origin: 0% 50%;
   display: flex;
@@ -223,7 +225,6 @@ main {
   transform: scaleX(1);
 }
 .menu-content__proposition:hover .menu-content__proposition--encoche i {
-  border: 1px yellow solid;
   background-color: white;
   padding: 0.3rem;
   border-radius: 1.2rem;
