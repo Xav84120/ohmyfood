@@ -41,7 +41,60 @@ a {
     color: black;
 }
 
+/***************************************************** LOADING SPINNER ***********************************************************/
 
+
+.ecran {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    animation-name: screen;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+.rond {
+    position: absolute;
+    top: 0; left:0; right: 0; bottom: 0;
+    margin: auto;
+    width: 200px;
+    height: 200px;
+    border-top: 6px $clr-prim solid;
+    border-bottom: 6px $clr-prim solid;
+    border-radius: 50%;
+    animation-name: spin;
+    animation-duration: 3s;
+}
+
+@keyframes screen {
+    0% {
+        background-color: $clr-tert;
+        z-index: 1;
+        opacity: .4;
+    }
+
+    99% {
+        background-color: $clr-tert;
+        z-index: 1;
+        opacity: .4;
+    }
+    100% {
+        background-color: transparent;
+        z-index: -4;
+        opacity: 0;
+    }
+
+    
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
 /*********************************************************** HEADER ***********************************************************/
 
 .header {
