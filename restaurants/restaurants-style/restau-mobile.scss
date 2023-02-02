@@ -37,7 +37,7 @@ h3 {
 }
 
 h4 {
-    font-size: 1.1rem;
+    font-size: .9rem;
     
 }
 
@@ -202,22 +202,31 @@ main {
        
         &--name {
             transform-origin: 0% 50%;
+            width: 220px;
             h4 {
-                width: 250px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
             }
         }
         &--description {
             width: 90%;
             transform-origin: 0% 50%;
             @include row-space-between;
+            h5 {
+                white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            }
+            
         }
         &--encoche {
             @include row-center;
             position: absolute;
             top: 0;
-            left: 80%;
+            left: 83%;
             background-color: $clr-tert;
-            width: 20%;
+            width: 18%;
             height: 100%;
             border-radius: 0 15px 15px 0;
             transform-origin: 100% 50%;
@@ -228,11 +237,13 @@ main {
            
             .menu-content__proposition--name {
                 transition: 1s ease-in-out;
-                transform: scaleX(.8);
+                width: 80%;
+                // transform: scaleX(.8);
             }
             .menu-content__proposition--description {
                 transition: 1s ease-in-out;
-                transform: scaleX(.8);
+                width: 80%;
+                // transform: scaleX(.8);
             }
             .menu-content__proposition--encoche {
                 transition: 1s ease-in-out;
