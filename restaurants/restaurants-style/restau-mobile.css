@@ -100,7 +100,7 @@ main {
   font-family: "shrikhand", "serif";
   width: 80%;
   margin: auto;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 .menu-title__coeur {
   position: relative;
@@ -120,28 +120,37 @@ main {
 }
 
 /************** ARTICLE ****************/
-@-webkit-keyframes deroulement {
+@-webkit-keyframes menu {
   0% {
-    transform: scaleY(0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateY(-30px);
   }
   100% {
-    transform: scaleY(1);
+    opacity: 1;
+    transform: translateY(-30px);
   }
 }
-@keyframes deroulement {
+@keyframes menu {
   0% {
-    transform: scaleY(0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateY(-30px);
   }
   100% {
-    transform: scaleY(1);
+    opacity: 1;
+    transform: translateY(-30px);
   }
 }
 .deroulement {
-  transform-origin: 50% 0%;
-  -webkit-animation-name: deroulement;
-          animation-name: deroulement;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  -webkit-animation-name: menu;
+          animation-name: menu;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
 }
