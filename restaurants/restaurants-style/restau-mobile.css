@@ -120,19 +120,6 @@ main {
 }
 
 /************** ARTICLE ****************/
-@-webkit-keyframes menu {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0.5;
-    transform: translateY(-30px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(-30px);
-  }
-}
 @keyframes menu {
   0% {
     opacity: 0;
@@ -147,27 +134,21 @@ main {
   }
 }
 .deroulement {
-  -webkit-animation-name: menu;
-          animation-name: menu;
-  -webkit-animation-duration: 4s;
-          animation-duration: 4s;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
+  animation-name: menu;
+  animation-duration: 4s;
+  animation-fill-mode: both;
 }
 
 .entree {
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+  animation-delay: 1s;
 }
 
 .plats {
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
+  animation-delay: 2s;
 }
 
 .desserts {
-  -webkit-animation-delay: 3s;
-          animation-delay: 3s;
+  animation-delay: 3s;
 }
 
 .menu-content {
@@ -182,6 +163,7 @@ main {
   margin-bottom: 10px;
 }
 .menu-content__proposition {
+  border: 3px red solid;
   position: relative;
   background-color: white;
   display: flex;
