@@ -163,7 +163,7 @@ main {
   margin-bottom: 10px;
 }
 .menu-content__proposition {
-  border: 3px red solid;
+  overflow: hidden;
   position: relative;
   background-color: white;
   display: flex;

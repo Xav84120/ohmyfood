@@ -194,7 +194,7 @@ main {
         }
     }
     &__proposition {
-        border: 3px red solid;
+        overflow: hidden;
         position: relative;
         background-color: white;
         display: flex;
@@ -222,8 +222,8 @@ main {
             @include row-space-between;
             h5 {
                 white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
+                overflow: hidden;
+                text-overflow: ellipsis;
             }
             
         }

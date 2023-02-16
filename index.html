@@ -15,39 +15,44 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./accueil-style/mobile.css" />
-    <link rel="stylesheet" media="screen and (min-width: 768px)" href="./accueil-style/tablette.css">
-    <link rel="stylesheet" media="screen and (min-width: 992px)" href="./accueil-style/desktop.css">
+    <link
+      rel="stylesheet"
+      media="screen and (min-width: 768px)"
+      href="./accueil-style/tablette.css"
+    />
+    <link
+      rel="stylesheet"
+      media="screen and (min-width: 992px)"
+      href="./accueil-style/desktop.css"
+    />
     <title>Accueil</title>
   </head>
 
   <body>
-
     <!---------------------------------------------------------------LOADING SPINNER----------------------------------------------------->
 
     <div class="ecran">
       <div class="rond"></div>
     </div>
-    
+
     <!--------------------------------------------------------------------- HEADER ------------------------------------------------------------->
 
     <header class="header">
       <h1 class="header__txt">ohmyfood</h1>
     </header>
 
-
     <!---------------------------------------------------------------------- MAIN -------------------------------------------------------------->
 
     <main class="main">
-
       <div class="localisation-presentation-fonctionnement">
         <section class="localisation">
           <p class="localisation__txt">
             <i class="fa-solid fa-location-dot"></i>Paris,Belleville
           </p>
         </section>
-  
+
         <!----------------- SECTION PRESENTATION ------------------------------->
-  
+
         <section class="presentation">
           <div class="presentation__contain">
             <h2 class="presentation__contain--reservez">
@@ -66,26 +71,26 @@
             </div>
           </div>
         </section>
-  
+
         <!------------- SECTION FONCTIONNEMENT ------------------------------->
-  
+
         <section class="fonctionnement">
           <div class="fonctionnement__contain">
             <div class="fonctionnement__contain--title">
               <h2>Fonctionnement</h2>
             </div>
             <div class="fonctionnement__contain--btn">
-              <button class="fct-btn">
+              <div class="fct-btn">
                 <div class="fct-btn__number">
                   <p>1</p>
                 </div>
                 <div class="fct-btn__txt">
-                  <i class="fa-solid fa-mobile-screen-button"></i>
+                  <i class="fa fa-mobile-screen-button"></i>
                   <p>Choisissez un restaurant</p>
                 </div>
-              </button>
-  
-              <button class="fct-btn">
+              </div>
+
+              <div class="fct-btn">
                 <div class="fct-btn__number">
                   <p>2</p>
                 </div>
@@ -93,21 +98,21 @@
                   <i class="fa-solid fa-list-ul"></i>
                   <p>Composez votre menu</p>
                 </div>
-              </button>
-              <button class="fct-btn">
+              </div>
+              <div id="fct-btn-3" class="fct-btn">
                 <div class="fct-btn__number">
                   <p>3</p>
                 </div>
                 <div class="fct-btn__txt">
-                  <i class="fa-sharp fa-solid fa-store"></i>
+                  <i id="i-3" class="fa-sharp fa-solid fa-store"></i>
                   <p>Dégustez au restaurant</p>
                 </div>
-              </button>
+              </div>
             </div>
           </div>
         </section>
-      </div><!--fin localisation-presentation-fonctionnement-->
-      
+      </div>
+      <!--fin localisation-presentation-fonctionnement-->
 
       <!------------------------ SECTION RESTAURANTS -------------------------->
 
@@ -118,9 +123,13 @@
           </div>
           <div class="restaurants__contain--cards">
             <div class="restau1-restau2">
-              <a href="./restaurants/palette/palette.html" >
+              <a href="./restaurants/palette/palette.html">
                 <div class="restaurants-cards">
-                  <div class="restaurants-cards__img palette"></div>
+                  <div class="restaurants-cards__img palette">
+                    <div class="nouveau">
+                      <p>Nouveau</p>
+                    </div>
+                  </div>
                   <div class="restaurants-cards__description">
                     <div class="restaurants-cards__description--txt">
                       <h3>La palette du goût</h3>
@@ -137,11 +146,14 @@
                   </div>
                 </div>
               </a>
-              
-  
-              <a href="./restaurants/enchantee/enchantee.html" >
+
+              <a href="./restaurants/enchantee/enchantee.html">
                 <div class="restaurants-cards">
-                  <div class="restaurants-cards__img note"></div>
+                  <div class="restaurants-cards__img note">
+                    <div class="nouveau">
+                      <p>Nouveau</p>
+                    </div>
+                  </div>
                   <div class="restaurants-cards__description">
                     <div class="restaurants-cards__description--txt">
                       <h3>La note enchantée</h3>
@@ -158,10 +170,11 @@
                   </div>
                 </div>
               </a>
-            </div><!--fin restau1-restau2-->
-            
+            </div>
+            <!--fin restau1-restau2-->
+
             <div class="restau3-restau4">
-              <a href="./restaurants/française/française.html" >
+              <a href="./restaurants/francaise/francaise.html">
                 <div class="restaurants-cards">
                   <div class="restaurants-cards__img française"></div>
                   <div class="restaurants-cards__description">
@@ -169,7 +182,7 @@
                       <h3>A la française</h3>
                       <h4>Cité Rouge</h4>
                     </div>
-                    
+
                     <div class="restaurants-cards__description-coeur">
                       <div class="restaurants-cards__description-coeur--vide">
                         <i class="fa-regular fa-heart"></i>
@@ -177,13 +190,13 @@
                       <div class="restaurants-cards__description-coeur--plein">
                         <i class="fa-solid fa-heart"></i>
                       </div>
-                    </div><!--fin restaurants-cards__description-coeur-->
+                    </div>
+                    <!--fin restaurants-cards__description-coeur-->
                   </div>
                 </div>
               </a>
-              
-  
-              <a href="./restaurants/delice/delice.html" >
+
+              <a href="./restaurants/delice/delice.html">
                 <div class="restaurants-cards">
                   <div class="restaurants-cards__img delice"></div>
                   <div class="restaurants-cards__description">
@@ -191,7 +204,7 @@
                       <h3>Le délice des sens</h3>
                       <h4>Folie-Méricourt</h4>
                     </div>
-                    
+
                     <div class="restaurants-cards__description-coeur">
                       <div class="restaurants-cards__description-coeur--vide">
                         <i class="fa-regular fa-heart"></i>
@@ -199,14 +212,18 @@
                       <div class="restaurants-cards__description-coeur--plein">
                         <i class="fa-solid fa-heart"></i>
                       </div>
-                    </div><!--fin restaurants-cards__description-coeur-->
-                    
-                  </div><!--fin restaurants-cards__description-->
-                </div><!--fin restaurants-cards-->
+                    </div>
+                    <!--fin restaurants-cards__description-coeur-->
+                  </div>
+                  <!--fin restaurants-cards__description-->
+                </div>
+                <!--fin restaurants-cards-->
               </a>
-            </div><!--fin restau3-restau4-->
-            
-        </div><!--fin restaurants__contain--cards-->
+            </div>
+            <!--fin restau3-restau4-->
+          </div>
+          <!--fin restaurants__contain--cards-->
+        </div>
       </section>
     </main>
 

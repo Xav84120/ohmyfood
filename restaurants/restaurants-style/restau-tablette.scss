@@ -37,7 +37,7 @@ h3 {
 }
 
 h4 {
-    font-size: 1.1rem;
+    font-size: .9rem;
     
 }
 
@@ -113,19 +113,30 @@ main {
 
 /*************************************************** SECTION MENU *********************************************************/
 
+.entree-plat-dessert {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
 .menu {
     background-color: #EDECEC;
     border-radius: 30px 30px 0 0;
     padding-bottom: 50px;
     padding-top: 10px;
     margin-top: 160px;
+    h3 {
+        border-bottom: 3px $clr-tert solid;
+        margin-bottom: 5px;
+    }
 }
 .menu-title {
     @include row-space-between;
     font-family: "shrikhand", "serif";
     width: 80%;
     margin: auto;
-    margin-bottom: 20px;
+    margin-bottom: 60px;
     &__coeur {
         position: relative;
         font-size: 1.5rem;
@@ -146,52 +157,55 @@ main {
 
 
 /************** ARTICLE ****************/
-@keyframes deroulement {
+@keyframes menu {
     0% {
-        transform: scaleY(0);
+        opacity: 0;
     }
+
+    50% {
+        opacity: .5;
+        transform: translateY(-30px);
+    }
+
     100% {
-        transform: scaleY(1);
+        opacity: 1;
+        transform: translateY(-30px);
     }
 }
 
 .deroulement {
-    transform-origin: 50% 0%;
-    animation-name: deroulement;
-    animation-duration: 2s;
+    animation-name: menu;
+    animation-duration: 4s;
     animation-fill-mode: both;
 }
 
-.entree-plat {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-}
 .entree {
+    width: 50%;
     animation-delay: 1s;
 }
 
 .plats {
+    width: 50%;
     animation-delay: 2s;
 }
 
-.bloc-dessert {
-    display: flex;
-    justify-content: center;
-}
-
 .desserts {
+    width: 100%;
+    margin-top: 20px;
     animation-delay: 3s;
-    width: 45%;
 }
 
 .menu-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 90%;
     margin: auto;
     margin-bottom: 20px;
     &__title {
         &--underline {
+            display: none;
             width: 50px;
             height: 3px;
             background-color: $clr-tert;
@@ -200,7 +214,10 @@ main {
         }
     }
     &__proposition {
+        overflow: hidden;
         position: relative;
+        width: 300px;
+        height: 65px;
         background-color: white;
         display: flex;
         flex-direction: column;
@@ -209,27 +226,35 @@ main {
         padding-left: 10px;
         border-radius: 15px;
         box-shadow: #c0baba 2px 3px 2px 0px;
-        height: 65px;
         margin-bottom: 15px; 
        
         &--name {
             transform-origin: 0% 50%;
+            width: 300px;
             h4 {
-                width: 250px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
             }
         }
         &--description {
             width: 90%;
             transform-origin: 0% 50%;
             @include row-space-between;
+            h5 {
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+            
         }
         &--encoche {
             @include row-center;
             position: absolute;
             top: 0;
-            left: 80%;
+            left: 83%;
             background-color: $clr-tert;
-            width: 20%;
+            width: 18%;
             height: 100%;
             border-radius: 0 15px 15px 0;
             transform-origin: 100% 50%;
@@ -240,11 +265,13 @@ main {
            
             .menu-content__proposition--name {
                 transition: 1s ease-in-out;
-                transform: scaleX(.8);
+                width: 80%;
+                // transform: scaleX(.8);
             }
             .menu-content__proposition--description {
                 transition: 1s ease-in-out;
-                transform: scaleX(.8);
+                width: 80%;
+                // transform: scaleX(.8);
             }
             .menu-content__proposition--encoche {
                 transition: 1s ease-in-out;

@@ -198,6 +198,7 @@ a {
 
 .fct-btn {
     position: relative;
+    @include center;
     width: 100%;
     height: 50px;
     background-color: #F7F7F7;
@@ -220,9 +221,19 @@ a {
         @include between;
         width: 70%;
         i {
+            font-size: 1rem;
             color: #877f7f;
+            margin-right: 10px;
         }
     }
+}
+
+#fct-btn-3 {
+    background-color: #ead1ea;
+}
+
+#i-3 {
+    color: #9356DC;
 }
 
 
@@ -276,9 +287,11 @@ a {
 }
 
 .palette {
+    position: relative;
     background: url(../images/palette.jpg) center/cover;
 }
 .note {
+    position: relative;
     background: url(../images/enchantee.jpg) center/cover;
 }
 .française {
@@ -286,6 +299,18 @@ a {
 }
 .delice {
     background: url(../images/delice.jpg) center/cover;
+}
+
+.nouveau {
+    @include center;
+    position: absolute;
+    top:15px;
+    right: 15px;
+    width: 100px;
+    height: 30px;
+    background-color: $clr-tert;
+    color: green;
+    border-radius: 5px;
 }
 
 

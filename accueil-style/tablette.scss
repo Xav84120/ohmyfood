@@ -65,11 +65,15 @@ a {
     border-top: 2px #CECECE solid;
     &__txt {
         display: flex;
-        justify-content: space-evenly;
+        justify-content: center;
         align-items: center;
         width: 45%;
-       
         font-weight: bold;
+
+        i {
+            margin-right: 10px;
+        }
+
     }
 }
 
